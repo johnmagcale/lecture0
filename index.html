@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+        <title>Michael</title>
+        <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic|Fjalla+One|Poppins|Thasadith:400,400i,700,700i" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="shortcut icon" href="../img/image.png">
+        <script src="https://unpkg.com/scrollreveal"></script>
+    </head>
+    <body>
+      <!--Gotten from bootstap Starter Template for navbar-->
+      <nav class="navbar navbar-expand-md fixed-top">
+        <div id="img">
+        <img src="../img/image.png" width="50" height="50" alt="">
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <!--div class for the links in the navbar-->
+        <div class="collapse navbar-collapse" id="navbars">
+          <ul class="nav navbar-nav ml-auto">
+            <li><a class="nav-link" href="index.html">home</a></li>
+            <li><a class="nav-link" href="about.html">about me</a></li>
+            <li><a class="nav-link" href="family.html">family</a></li>
+            <li><a class="nav-link" href="profession.html">profession</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!--Start of home page-->
+      <section id="section-myself">
+        <video autoplay muted loop id="myVideo">
+          <source src="/img/michael.mp4" type="video/mp4">
+          </video>
+
+          <div class="content"
+          data-aos="fade-left"
+          data-aos-anchor-placement="top-center"
+          data-aos-duration="500"
+          data-aos-easing="ease-in-out"
+          data-aos-once="false">
+            <h1>hello world, my name is <a id="name-link" href="about.html">Michael</a></h1>
+              <p id="pfront">Welcome to my first ever website project for CS50! Here is where you'll learn and know more about me, from some of my personal and educational background, to my hobbies and interest.</p>
+          </div>
+      </section>
+
+
+      <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css"></script>
+
+      <!--script for the image-->
+      <script>
+        window.sr = ScrollReveal();
+        sr.reveal('.content',{
+          delay: 350,
+          distance: '300px',
+          duration: 2000,
+          origin:'bottom'
+        })
+      </script>
+    </body>
+</html>
