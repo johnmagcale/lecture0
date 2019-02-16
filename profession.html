@@ -5,8 +5,10 @@
         <title>Michael</title>
         <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic|Fjalla+One|Poppins|Thasadith:400,400i,700,700i" rel="stylesheet">
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/styles3.css">
         <link rel="shortcut icon" href="../img/image.png">
+        <link rel="stylesheet" href="aos.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <script src="https://unpkg.com/scrollreveal"></script>
     </head>
     <body>
@@ -29,33 +31,28 @@
         </div>
       </nav>
 
-      <!--Start of about section-->
-      <section id="home">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 col-sm-6">
-              <div class="home-left">
-              <img src="../img/DKHI2672.jpg" width="400" height="532" alt="">
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-6">
-              <div class="home-right">
-              <h1>Welcome to my first website project!</h1>
-              <p>Basically here is where you'll see and learn more about me</P>
-              </div>
-            </div>
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <img data-aos="fade-left" id="callingcard" src="../img/callingcard1.jpg" style="width:500px;height:300px">
+          </div>
+          <div class="flip-box-back">
+            <img data-aos="fade-left" id="callingcard1" src="../img/callingcard.jpg" style="width:500px;height:300px">
           </div>
         </div>
-      </section>
+      </div>
 
-      <footer>
-        <p class="text-center">Michael Copyright &copy; 2019</p>
-      </footer>
-
-      <script
-        src="https://code.jquery.com/jquery-3.3.1.js"
-        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-        crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+      <script src="aos.js"></script>
+      <script type="text/javascript">
+        AOS.init({
+            offset:15,
+            delay:500,
+
+        });
+
+
+      </script>
     </body>
 </html>
